@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Reserve</title>
+
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+<!-- //font-awesome-icons -->
+<!-- Stylesheet -->
+<link href="form.css" rel='stylesheet' type='text/css' />
+<!-- //Stylesheet -->
+<!-- fonts --> 
+<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">  
+
+<!-- // fonts-->
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="row">
+				<img src="Images/logo.png" class="logo">
+				<ul class="main-nav" id="check-class">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="aboutus.html">About Us </a></li>
+					<li><a href="form.html">Resrvation</a></li>
+					
+			</ul>
+					
+			</div>
+		</nav>
+	</header>
+<!--background-->
+<h1> Reservation  Form</h1>
+    <div class="bg-agile">
+	<div class="book-appointment">
+	<h2>Book Now</h2>
+						<div class="book-form agileits-login">
+							<form>
+								<div class="agileits_reservation_grid">
+								<div class="phone_email">
+									<div class="form-text">
+										<i class="fa fa-user" aria-hidden="true"></i>
+										<input type="text" name="firstname" placeholder="First name" required="" autocomplete="off">
+									</div> 
+								</div>
+								<div class="phone_email phone_email1">
+									<div class="form-text">
+										<i class="fa fa-user" aria-hidden="true"></i>
+										<input type="text" name="lastname" placeholder="Last name" required="" autocomplete="off">
+									</div>
+								</div>
+								
+								<div class="phone_email">
+									<div class="form-text">
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<input type="text" name="phoneno" placeholder="Phone number" required="" autocomplete="off">
+									</div> 
+								</div> 
+								<div class="phone_email phone_email1">
+									<div class="form-text">
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+										<input type="email" name="email" placeholder="Email" required="" autocomplete="off">
+									</div>
+								</div>
+									
+								
+									<div class="span1_of_1 phone_email1">
+										<div class="book_time"> 
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+												<input  id="timepicker" name="arrivaltime" type="text" value="" placeholder="Arrival Time"   required="">
+
+										</div>					
+									</div>
+									<div class="span1_of_1 phone_email">
+										<div class="book_date"> 
+											<i class="fa fa-calendar" aria-hidden="true"></i>
+												<input  id="datepicker1" name="departuredate" type="text" value="" placeholder=" Date"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+
+										</div>					
+									</div>
+									<div class="span1_of_1 phone_email">
+										<!-- start_section_room -->
+										<div class="form-text">
+											<i class="fa fa-users" aria-hidden="true"></i>
+											<input type="text" name="guest" id="country" placeholder="No of Guests" required="" autocomplete="off">
+										</div>	
+									</div>
+									<div class="span1_of_1 phone_email1">
+										<!-- start_section_room -->
+										<div class="section_room">
+											<i class="fa fa-h-square" aria-hidden="true"></i>
+                                            <select class="room" name="room" id="country" onchange="change_country(this.value)" class="frm-field required">
+                                                <option value="">Table Type</option>
+												<option value="luxury">2 Seater</option>
+												<option value="double">4 Seater</option>
+												<option value="suit">6 Seater</option>
+												<option value="single">8 Seater</option>
+												<option value="delux">10 Seater</option>
+                                                <option value="delux">12 Seater</option>
+												
+												
+							
+											</select> 
+										</div>	
+									</div>
+									<div class="clear"></div>
+								</div> 
+								<input type="submit" name="submit" value="Reserve Now" >
+								<input type="reset" name="reset" value="Reset">
+								<div class="clear"></div>
+							</form>
+						</div>
+
+		</div>
+   </div>
+  
+	
+
+</body>
+</html>
